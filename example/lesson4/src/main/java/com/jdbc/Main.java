@@ -9,10 +9,10 @@ public class Main {
     private static final String PASSWORD = "root";
     private static final String URL = "jdbc:mysql://localhost:3306/mysql?useSSL=false";
 
-    public static void main(String[] args) throws SQLException {
+
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
         Connection connection = null;
         Driver drv;
-
         try {
             drv = new com.mysql.cj.jdbc.Driver();
         } catch (SQLException ex) {
